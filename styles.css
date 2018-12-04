@@ -1,0 +1,104 @@
+/* ============================  */
+/* == G O B A L  S T Y L E S ==  */
+/* ============================  */
+
+body {
+  background-color: #000;
+}
+/* ==== FIXED SIDE CONTENT ===  */
+/* = END FIXED SIDE CONTENT ==  */
+
+/* ======== FOOTER ===========  */
+/* ====   END FOOTER  ========  */
+
+/* ========== E N D ===========  */
+/* ===G O B A L  S T Y L E S===  */
+/* ============================  */
+
+
+
+
+/* ============================  */
+/* === N A V I G A T I O N ====  */
+/* ============================  */
+
+/* ======= LOGO ICON =========  */
+/* ==== END LOGO ICON ========  */
+
+/* ===== HAMBURGER ICON ======  */
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+/* makes middle line disapear */
+.icon.active .hamburger {
+  background: rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+/* rotate top and bottom line to form a X */
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+/* hamburger line styles */
+.hamburger {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: .5s;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: .5s;
+}
+
+.hamburger:before {
+  top: -16px;
+}
+
+.hamburger:after {
+  top: 16px;
+}
+/* === END HAMBURGER ICON ====  */
+
+
+/* ========= E N D ============  */
+/* === N A V I G A T I O N ====  */
+/* ============================  */
+
+
+
+
+
+/* ============================  */
+/* ==== H O M E P A G E  ======  */
+/* ============================  */
+
+/* =========== E N D ==========  */
+/* ==== H O M E P A G E  ======  */
+/* ============================  */
