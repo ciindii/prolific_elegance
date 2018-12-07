@@ -4,6 +4,7 @@
 
 body {
   background-color: #000;
+  margin: 0;
 }
 /* ==== FIXED SIDE CONTENT ===  */
 /* = END FIXED SIDE CONTENT ==  */
@@ -21,26 +22,27 @@ body {
 /* ============================  */
 /* === N A V I G A T I O N ====  */
 /* ============================  */
-
-.nav-div {
+nav {
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
 }
+
 /* ======= LOGO ICON =========  */
 .logo {
-  float: left;
-  margin-left: 20px;
+  margin: 10px;
 }
 /* ==== END LOGO ICON ========  */
 
 /* ===== HAMBURGER ICON ======  */
-
 .icon {
-  float: right;
-  margin-top: 30px;
-  margin-right: -40px;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
   cursor: pointer;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  padding: 12px;
+  z-index: 999999;
 }
 
 /* makes middle line disapear */
@@ -52,16 +54,18 @@ body {
 .icon.active .hamburger:before {
   top: 0;
   transform: rotate(45deg);
+  background: #000;
 }
 
 .icon.active .hamburger:after {
   top: 0;
   transform: rotate(135deg);
+  background: #000;
 }
 
 /* hamburger line styles */
 .hamburger {
-  width: 40px;
+  width: 30px;
   height: 2px;
   background: #fff;
   position: absolute;
@@ -76,7 +80,7 @@ body {
 .hamburger:after {
   content: '';
   position: absolute;
-  width: 40px;
+  width: 30px;
   height: 2px;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,.2);
@@ -93,6 +97,62 @@ body {
 /* === END HAMBURGER ICON ====  */
 
 
+/* ====== DROP DOWN MENU =====  */
+.toggle-nav {
+  width: 50%;
+}
+
+.toggled-menu {
+  display: block;
+  width: 100%;
+
+}
+
+.toggled-menu a:hover {
+  background-color: #fff;
+  text-decoration: none;
+  opacity: .5;
+  color: #fff;
+  letter-spacing: .5px;
+  transition: .5s;
+}
+
+.drop-content {
+  display: none;
+  background-color: rgba(255, 255, 255, 1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+  width: 200px;
+  height: 100vh;
+  transition: .4s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: left;
+  padding-top: 100px;
+
+}
+
+.drop-content a {
+  color: #000;
+  padding: 18px 16px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+
+.show {
+  display: block;
+}
+/* ==== END DROP DOWN MENU ====  */
+
 /* ========= E N D ============  */
 /* === N A V I G A T I O N ====  */
 /* ============================  */
@@ -104,6 +164,17 @@ body {
 /* ============================  */
 /* ==== H O M E P A G E  ======  */
 /* ============================  */
+
+.backdrop {
+  background-image: url('img/landingimg.jpeg');
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 /* =========== E N D ==========  */
 /* ==== H O M E P A G E  ======  */
