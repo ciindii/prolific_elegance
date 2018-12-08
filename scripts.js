@@ -1,23 +1,12 @@
 $(document).ready(function () {
-  $('.icon').click(function () {
-    $('.icon').toggleClass('active');
+    $('.toggle-button a').click(function () {
+        $('.overlay-bg').fadeToggle(200);
+        $(this).toggleClass('btn-open').toggleClass('btn-close');
+      });
   });
-});
 
-function myFunction() {
-  document.getElementById('toggle-nav').classList.toggle('show');
-}
-
-window.onclick = function (event) {
-  if (!event.target.matches('.icon')) {
-
-    var dropdowns = document.getElementsByClassName('drop-content');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};
+$('.overlay-bg').on('click', function () {
+    $('.overlay-bg').fadeToggle(200);
+    $('.toggle-button a').toggleClass('btn-open').toggleClass('btn-close');
+    open = false;
+  });
