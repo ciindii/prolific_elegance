@@ -248,6 +248,7 @@ nav ul li a:hover {
   opacity: .5;
 }
 /* ======= END NAV MENU =======  */
+
 /* ========= E N D ============  */
 /* === N A V I G A T I O N ====  */
 /* ============================  */
@@ -286,32 +287,53 @@ footer {
 /* email and phone icons */
 .cell:before {
   content: "\f095";
-  font-family: FontAwesome;
-  padding-right: 5px;
-  color: #fff;
 }
 
 .mail:before {
   content: "\f0e0";
+}
+
+.cell:before,
+.mail:before {
   font-family: FontAwesome;
   padding-right: 5px;
-  color: #fff;
+  color: gray
+}
+
+.contact {
+  padding: 40px;
 }
 
 .contact span,
-.info a {
-    color: #fff;
-    font-size: .9em;
+.contact p,
+.location {
+  color: gray;
+  font-size: .9em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact p {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 2px;
+  text-transform: uppercase;
 }
 
 /* hover effect for phone and email icons */
-.callLink:hover,
+.location:hover,
 a[href^="mailto:"]:hover,
 a[href^="tel:"]:hover {
   text-decoration: none;
   opacity: .5;
 }
 
+.copyright {
+  color: #ccc;
+  font-size: .7em;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 /* =========== E N D ==========  */
