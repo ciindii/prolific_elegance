@@ -22,6 +22,14 @@ a {
   color: #fff;
   transition: opacity 0.4s ease-out;
 }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  color: #eee;
+  font-family: 'Raleway', sans-serif;
+}
 /* ==== FIXED SIDE CONTENT ===  */
 /* = END FIXED SIDE CONTENT ==  */
 
@@ -50,7 +58,6 @@ a {
 nav {
   height: 70px;
   background-color: transparent;
-  position: fixed;
   width: 100%;
 }
 
@@ -272,6 +279,11 @@ nav ul li a:hover {
   background-position: center;
 }
 
+#section-1 {
+  color: #fff;
+
+}
+
 /* =========== E N D ==========  */
 /* ==== H O M E P A G E  ======  */
 /* ============================  */
@@ -358,3 +370,53 @@ a[href^="tel:"]:hover {
 		visibility:hidden;
 	}
 }
+
+
+
+
+
+
+/* ============================  */
+/* === A B O U T  P A G E =====  */
+/* ============================  */
+
+#about_div h2,
+#about_contact h2 {
+  color: #ccc;
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #fff;
+}
+
+#about_div h3 {
+  color: #ccc;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: .8em;
+  margin-bottom: -10px;
+}
+
+#about_div p {
+  color: #ddd;
+  font-family: 'Raleway', sans-serif;
+  line-height: 18px;
+  font-size: .85em;
+  margin-bottom: 50px;
+}
+
+#about_div img {
+  width: 99.9%;
+  margin: 0 auto;
+  display: block;
+}
+
+#about_contact .messanger {
+  height: 300px;
+  background-color: #fff;
+}
+/* ========== E N D ===========  */
+/* === A B O U T  P A G E =====  */
+/* ============================  */
