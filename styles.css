@@ -50,15 +50,15 @@ a {
 /* ======== LOGO ICON =========  */
 .logo {
   margin: 10px;
-  position: fixed;
 }
 /* ===== END LOGO ICON ========  */
 
 /* ========= NAV MENU =========  */
 nav {
   height: 70px;
-  background-color: transparent;
+  background: linear-gradient(to bottom, rgba(0,0,0,.9) 0%,rgba(0,0,0,0) 100%);
   width: 100%;
+    position: fixed;
 }
 
 nav ul li {
@@ -97,7 +97,7 @@ nav ul li a:hover {
 }
 
 .btn-open:after {
-	color: #333;
+	color: #fff;
 	content: "\f0c9";
 	font-family: "FontAwesome";
 	transition-property: all .2s linear 0s;
@@ -107,7 +107,7 @@ nav ul li a:hover {
 }
 
 .btn-open:hover:after {
-	color: #fff;
+	color: gold;
 }
 
 .btn-close:after {
@@ -122,6 +122,7 @@ nav ul li a:hover {
 
 .btn-close:hover:after {
 	color: #fff;
+  position: fixed;
 }
 /* ==== end toggle button =====  */
 
@@ -379,6 +380,10 @@ a[href^="tel:"]:hover {
 /* ============================  */
 /* === A B O U T  P A G E =====  */
 /* ============================  */
+
+#about_div {
+  margin-top: 80px;
+}
 
 #about_div h2,
 #about_contact h2 {
