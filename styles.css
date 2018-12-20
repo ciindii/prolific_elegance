@@ -13,10 +13,12 @@ ul {
 	text-decoration:none;
 	list-style:none;
 }
+
 li {
 	padding:0;
 	margin:0;
 }
+
 a {
   text-decoration: none;
   color: #fff;
@@ -77,7 +79,7 @@ nav {
   height: 70px;
   background: linear-gradient(to bottom, rgba(0,0,0,.9) 0%,rgba(0,0,0,0) 100%);
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 nav ul li {
@@ -97,16 +99,12 @@ nav ul li a {
 	font-size: 16px;
 }
 
-nav ul li a:hover {
-	color: #34B484;
-}
-
 /* ======= toggle button ======  */
 .toggle-button {
 	display: inline;
 	position: absolute;
 	right: 15px;
-	top: 15px;
+	top: 0px;
 	z-index: 999;
 	font-size: 30px;
 }
@@ -117,31 +115,29 @@ nav ul li a:hover {
 
 .btn-open:after {
 	color: #fff;
-	content: "\f0c9";
+  opacity: .6;
+	content: "\f078";
 	font-family: "FontAwesome";
-	transition-property: all .2s linear 0s;
-	-moz-transition: all .2s linear 0s;
-	-webkit-transition: all .2s linear 0s;
-	-o-transition: all .2s linear 0s;
+  font-size: 12px;
+  transition: 1.5s;
+  -webkit-transition: 1s; /* Safari */
 }
 
 .btn-open:hover:after {
 	color: #ffd966;
+  opacity: 1;
+  content: "\f7a4";
+  font-family: "FontAwesome";
 }
 
 .btn-close:after {
 	color: #fff;
 	content: '\f00d';
 	font-family: 'FontAwesome';
-	transition-property: all .2s linear 0s;
-	-moz-transition: all .2s linear 0s;
-	-webkit-transition: all .2s linear 0s;
-	-o-transition: all .2s linear 0s;
 }
 
 .btn-close:hover:after {
 	color: #fff;
-  position: fixed;
 }
 
 a.btn-close {
@@ -284,6 +280,7 @@ a.btn-close {
 .side-menu {
   display: none;
 }
+
 /* ======= END NAV MENU =======  */
 
 /* ========= E N D ============  */
@@ -299,7 +296,7 @@ a.btn-close {
 /* ============================  */
 
 .backdrop {
-  background-image: url('img/landingimg.jpeg');
+   /* background-image: url('img/landingimg.jpeg'); */
   background-repeat: no-repeat;
   height: 800px;
   width: 100%;
@@ -307,11 +304,79 @@ a.btn-close {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* text styles */
+  font-family: 'Thasadith', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  color: #fff;
 }
+
+.brand-name h1 {
+  font-size: 1em;
+  margin: 15px 0 0 10px;
+  line-height: 1.3;
+  position: relative;
+  /* animation */
+  animation: brand-name;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes brand-name {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+/* MISSION TEXT */
+.mission-text {
+  position: relative;
+  top: 140px;
+  left: 30px;
+}
+.mission-text p {
+  display: inline;
+  text-align: center;
+  opacity: .5;
+}
+.mission-text:after{
+  content: 'lashes';
+  animation-name: we-do;
+  -webkit-animation-name: we-do;
+  -webkit-animation-duration: 3s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes we-do {
+  0% {content: "lashes";}
+  50% {content: "brows";}
+  100% {content: "sugaring";}
+}
+/*  END MISSION TEXT */
+
+/*  ACTION BUTTON */
+.action-btn {
+  display: block;
+  text-align: center;
+  border-bottom: #fff 1px solid;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  opacity: 0;
+  /* animation */
+  animation-name: action-btn;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes action-btn {
+  0% {opacity: 0; width: 100%;}
+  100% {opacity: 1; width: 30%;}
+}
+/*  END ACTION BUTTON */
+
 
 #section-1 {
   color: #fff;
-
 }
 
 /* =========== E N D ==========  */
@@ -558,13 +623,32 @@ p.card-text {
   .side-menu {
     color: #fff;
     display: flex;
-    flex-direction: column;
     float: right;
-    padding: 5px;
+    padding: 20px;
   }
 
+  .side-menu li {
+    padding: 5px 0;
+  }
 
+  .side-menu a {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: gray;
+    opacity: .5;
+    transition: none;
+    padding: 0 5px;
 
+  }
+
+  .side-menu a:hover {
+    color: #fff;
+  }
+
+  .side-menu a.selected {
+    color: gold;
+  }
 
   /* ****************************  */
   /* ============================  */

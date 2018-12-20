@@ -18,3 +18,9 @@ $('.overlay-bg').on('click', function () {
     $('.toggle-button a').toggleClass('btn-open').toggleClass('btn-close');
     open = false;
   });
+
+$('.side-menu').on('click', function () {
+    $('.side-menu').removeClass('selected');
+    $(this).addClass('selected');
+  });
+  
