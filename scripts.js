@@ -23,4 +23,3 @@ $('.side-menu').on('click', function () {
     $('.side-menu').removeClass('selected');
     $(this).addClass('selected');
   });
-  
