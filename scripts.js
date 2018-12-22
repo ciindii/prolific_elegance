@@ -23,3 +23,43 @@ $('.side-menu').on('click', function () {
     $('.side-menu').removeClass('selected');
     $(this).addClass('selected');
   });
+
+//animate elements
+$(function () {
+  $('#an-btn').click(function () {
+    animate('#anymatewhatyouwant', 'bounce');
+    animate('#anymatewhatyouwant', 'bounce');
+    return false;
+  });
+
+  //makes elements go away
+  $('#an-btn2').click(function () {
+    animate('#anymatewhatyouwant', 'slideOutUp');
+    $('#animatewhatyouwant').css('visibility', 'hidden');
+  }, 1000);
+
+  return false;
+});
+
+//animated function
+function animate(element, animation) {
+  $(element).addClass('animated' + animation);
+  var wait = setTimeout(function () {
+      $(element).removeClass('animated' + animation);
+    }, 1000);
+}
+
+$(document).ready(function () {
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+
+    //scroll and show hash
+    $('html, body').animate({
+      'scrollTop': $target.offset().top,
+    }, 1000, 'swing', function () {
+      window.location.hash = target;
+    });
+  });
+});
