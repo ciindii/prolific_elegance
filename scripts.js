@@ -1,3 +1,5 @@
+AOS.init();
+
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 30) {
     $('nav').slideUp('slow');
@@ -27,7 +29,7 @@ $('.side-menu').on('click', function () {
 //animate elements
 $(function () {
   $('#an-btn').click(function () {
-    animate('#anymatewhatyouwant', 'bounce');
+    animate('#about', 'bounce');
     animate('#anymatewhatyouwant', 'bounce');
     return false;
   });
@@ -49,6 +51,7 @@ function animate(element, animation) {
     }, 1000);
 }
 
+//scrolls to #element when you click a tag
 $(document).ready(function () {
   $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();

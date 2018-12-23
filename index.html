@@ -8,6 +8,7 @@
   <link
   href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
   rel="stylesheet"  type='text/css'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
@@ -31,32 +32,32 @@
 <div class="side-menu">
   <ul>
     <li><a href="index.html">Home</a>
-    <li><a href="#scroll-section2">About</a>
-    <li><a href="services.html">Service</a>
-    <li><a href="work.html">work</a>
+    <li><a href="#about">About</a>
+    <li><a href="#services">Service</a>
+    <li><a href="#portfolio">work</a>
   </ul>
 </div>
 <div class="overlay-bg">
 	<div class="wrap">
 		<ul class="wrap-nav">
-			<li><a href="#scroll-section2">About</a>
+			<li><a href="#about">About</a>
 			<ul>
-				<li><a href="about_us.html">about us</a></li>
-        <li><a href="about_policy.html">policy</a></li>
-				<li><a href="about_message_us.html">message us</a></li>
+				<li><a href="#about-us">about us</a></li>
+        <li><a href="#policy">policy</a></li>
+				<li><a href="#">message us</a></li>
 			</ul>
 			</li>
-			<li><a href="#">Services</a>
+			<li><a href="#services">Services</a>
 			<ul>
-				<li><a href="#">lash extentions</a></li>
-				<li><a href="#">microblading</a></li>
-				<li><a href="#">waxing</a></li>
-				<li><a href="#">add on services</a></li>
+				<li><a href="#lash-extentions">lash extentions</a></li>
+				<li><a href="#microblading">microblading</a></li>
+				<li><a href="#waxing">waxing</a></li>
+				<li><a href="add-ons">add on services</a></li>
 			</ul>
 			</li>
-			<li><a href="#">Work</a>
+			<li><a href="#portfolio">Work</a>
 			<ul>
-				<li><a href="#">portfolio</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
 			</ul>
 			</li>
 		</ul>
@@ -81,12 +82,42 @@
     </div>
     <a href="#" class="action-btn">view services</a>
   </div>
-  <div class="space">      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dicta maiores pariatur commodi ipsum dolore, eaque earum dolorum ullam ut quaerat voluptatum voluptatem in tenetur quidem delectus cum accusantium sint, error nisi distinctio officiis placeat rem quia. Rem nobis, ex voluptatem molestiae magni esse, unde quasi aut, praesentium dolorem ut qui, ab expedita voluptatibus nihil corporis at voluptates. A beatae similique iusto voluptatem dolores atque nobis accusamus, quam consequatur veritatis quasi, quod et odio nihil, repudiandae, enim! Eveniet quia quaerat, quidem eos numquam excepturi recusandae sunt illo eum ea placeat veritatis architecto tenetur, nam blanditiis doloremque sequi odit! Ab, ea?</p></div>
+
   <div class="container">
     <div id="scroll-section1" class="animated slideInRight">
       list of certifications here <i class="fas fa-certificate"></i>
     </div>
-    <div id="scroll-section2">
+    <div id="about" class="animated slideInRight" data-aos="fade-up" data-aos-duration="1600" data-aos-mirror="true">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>
+    </div>
+    <div id="about-us" data-aos="fade-up" data-aos-duration="1600" data-aos-mirror="true" >
+      <div id="about_div">
+        <h2>our approach</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, omnis quos vitae? Iure tempore, impedit, alias ipsum modi nemo nihil maxime cumque provident necessitatibus autem sunt tenetur suscipit praesentium maiores hic ut. Aspernatur error hic molestias quo voluptatibus odit placeat culpa a quos voluptas molestiae recusandae, veritatis vero magnam beatae impedit, minus libero ducimus ea nostrum accusamus voluptates repellat est fugiat! Minima numquam, adipisci doloribus, dignissimos possimus quibusdam cum est culpa sit aliquam fuga unde non rem, deleniti. Maiores, mollitia!</p>
+        <h2>Natisha Phelps</h2>
+        <img src="img/tisha_selfie.jpg" alt="">
+        <h3>Owner | Licensed Esthetician</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, omnis quos vitae? Iure tempore, impedit, alias ipsum modi nemo nihil maxime cumque provident necessitatibus autem sunt tenetur suscipit praesentium maiores hic ut.</p>
+    </div>
+    <div id="portfolio" data-aos="fade-up" data-aos-duration="1600" data-aos-mirror="true">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>
+    </div>
+    <div id="services" data-aos="fade-up" data-aos-duration="600" data-aos-mirror="true">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>
+    </div>
+    <div id="lash-extentions" data-aos="fade-up" data-aos-duration="600" data-aos-mirror="true">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>
+    </div>
+    <div id="microblading" data-aos="fade-up" data-aos-duration="600" data-aos-mirror="true">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>
+    </div>
+    <div id="waxing" data-aos="fade-up" data-aos-duration="600" data-aos-mirror="true">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>
+    </div>
+    <div id="add-ons" data-aos="fade-up" data-aos-duration="600" data-aos-mirror="true">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>
+    </div>
+    <div id="policy" data-aos="fade-up" data-aos-duration="600" data-aos-mirror="true">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum corporis temporibus consequatur officiis quam, officia libero tempore suscipit quaerat.</p>
     </div>
   </div>
@@ -121,6 +152,10 @@
     </ul>
   <p class='copyright'>all rights reserved &copy; 2018</p>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
