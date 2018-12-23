@@ -60,9 +60,40 @@ $(document).ready(function () {
 
     //scroll and show hash
     $('html, body').animate({
-      'scrollTop': $target.offset().top,
+      scrollTop: $target.offset(),
     }, 1000, 'swing', function () {
       window.location.hash = target;
     });
   });
 });
+
+function toggle(id) {
+  var e = document.getElementById(id);
+  if (e.style.display == null || e.style.display == 'none') {
+    e.style.display = 'block';
+  } else {
+    e.style.display = 'none';
+  }
+}
+
+// function toggle(target) {
+//   document.getElementById(target).style.display = 'block';
+//   // document.getElementById('toggleDiv').style.display = //'none';
+// }
+// function hide(target) {
+//   document.getElementById(target).style.display = 'none';
+//   document.getElementById('toggleDiv').style.display = 'block';
+// }
+
+$(document).ready(function () {
+    $('#toggleDiv a').click(function () {
+        $('#toggleMeetOwner').fadeToggle(200);
+        $(this).toggleClass('show-div').toggleClass('hide-div');
+      });
+  });
+
+$('#toggleMeetOwner').on('click', function () {
+    $('#toggleMeetOwner').fadeToggle(200);
+    $('#toggleDiv').toggleClass('show-div').toggleClass('hide-div');
+    open = false;
+  });
