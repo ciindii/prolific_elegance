@@ -25,11 +25,11 @@ a {
   color: #fff;
   transition: opacity 0.4s ease-out;
 }
-.a:hover {
+a:hover {
   color: gold;
   text-decoration: none;
 }
-.a:focus {
+a:focus {
   color: #fff;
 }
 
@@ -47,7 +47,6 @@ h2 {
 .container {
   width: 95%;
   margin: 0 auto;
-  padding: 20px;
   color: #eee;
   font-family: 'Raleway', sans-serif;
 }
@@ -73,8 +72,9 @@ h2 {
 /* ======== LOGO ICON =========  */
 .brand-name img {
   position: relative;
-  width: 150px;
-  padding: 20px;
+  width: 120px;
+  margin-left: 10px;
+  padding: 0;
   /* animation */
   animation: brand-name;
   animation-duration: 3s;
@@ -96,9 +96,8 @@ h2 {
 /* ===== END LOGO ICON ========  */
 
 /* ========= NAV MENU =========  */
-nav {
-
-  background: linear-gradient(to bottom, rgba(0,0,0,.9) 0%,rgba(0,0,0,0) 100%);
+.brand-name {
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
   width: 100%;
   position: absolute;
 }
@@ -123,9 +122,9 @@ nav ul li a {
 /* ======= toggle button ======  */
 .toggle-button {
 	display: inline;
-	position: absolute;
-	right: 15px;
-	top: 0px;
+	position: fixed;
+	right: -5px;
+	top: -10px;
 	z-index: 999;
 	font-size: 30px;
 }
@@ -137,13 +136,13 @@ nav ul li a {
 .btn-open:after {
 	color: #fff;
   position: absolute;
-  padding-top: 25px;
+  padding: 15px;
   right: 25px;
   opacity: .6;
-	content: "\f078";
+	content: "\f142";
 	font-family: "FontAwesome";
   top: 30px;
-  font-size: 12px;
+  font-size: 20px;
   transition: 1.5s;
   -webkit-transition: 1s; /* Safari */
 }
@@ -151,14 +150,13 @@ nav ul li a {
 .btn-open:hover:after {
 	color: #ffd966;
   opacity: 1;
-  /* content: "\f7a4"; */
-  font-family: "FontAwesome";
 }
 
-.btn-close:after {
+.btn-close::after {
 	color: #fff;
-  font-size: 16px;
-	content: 'EXIT';
+  font-size: 20px;
+  padding: 20px;
+	content: 'x';
   font-family: 'Thasadith', sans-serif;
 }
 
@@ -335,13 +333,18 @@ a.btn-close {
   text-transform: lowercase;
   letter-spacing: 2px;
   color: #fff;
+  position: relative;
 }
 
 
 /* MISSION TEXT */
 .mission-text {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
+  position: absolute;
+  top: 60%;
+  right: 25%;
+  transform: translate(-50% -50%);
 }
 .mission-text p {
   display: inline-block;
@@ -369,9 +372,7 @@ a.btn-close {
   display: block;
   text-align: center;
   border-bottom: #fff 1px solid;
-  padding: 1rem 2rem;
-  margin: 350px auto 0 auto;
-  opacity: 0;
+  padding-bottom: 20px;
   transition: color 2s;
 
   /* animation */
@@ -390,8 +391,16 @@ a.btn-close {
 }
 @keyframes action-btn {
   0% {opacity: 0; width: 100%;}
-  100% {opacity: 1; width: 30%;}
+  100% {opacity: .8; width: 50%;}
 }
+
+.view-services-btn {
+  position: absolute;
+  top: 70%;
+  right: 35%;
+  transform: translate(-50% -50%);
+}
+
 
 /*  END ACTION BUTTON */
 
@@ -437,6 +446,12 @@ a.btn-close {
 
 
 #services{
+
+}
+
+.more-sugar-btn {
+  margin: 40px auto 0 auto;
+  width: 200px;
 
 }
 
@@ -509,18 +524,23 @@ table tr {
   font-family: 'Thasadith', serif;
 }
 
-
+/* =========== #portfolio ==========  */
 #portfolio{
+
+}
+
+.more-photos-btn {
+  margin: 40px auto 0 auto;
+}
+
+#portfolio-img-div {
 
 }
 
 .mySlides {
   display:none;
 }
-
-#section-1 {
-  color: #fff;
-}
+/* =========== E N D ==========  */
 
 /* =========== E N D ==========  */
 /* ==== H O M E P A G E  ======  */

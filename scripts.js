@@ -1,12 +1,12 @@
 AOS.init();
 
-$(window).bind('scroll', function () {
-  if ($(window).scrollTop() > 30) {
-    $('nav').slideUp('slow');
-  } else {
-    $('nav').slideDown('fast');
-  }
-});
+// $(window).bind('scroll', function () {
+//   if ($(window).scrollTop() > 30) {
+//     $('nav').slideUp('slow');
+//   } else {
+//     $('nav').slideDown('fast');
+//   }
+// });
 
 $(document).ready(function () {
     $('.toggle-button a').click(function () {
