@@ -505,7 +505,7 @@ table tr {
 /* ==== P O R T F O L I O  ====  */
 /* ============================  */
 #portfolio{
-  margin-top: 100px;
+  margin-top: 50px;
 
 }
 #portfolio img {
@@ -517,14 +517,29 @@ table tr {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 50px 0;
+  padding: 10px 0;
+  width: 150px;
+  margin: 0 auto;
 }
 .img-btn-div a{
   color: #fff;
-  padding: 5px 0;
+  padding: 15px 0;
   letter-spacing: 2px;
+  cursor: pointer;
+}
+.img-btn-div a:hover {
+  opacity: .5;
+  border: 1px solid #fff;
+}
+.img-btn-div a.active {
+  opacity: .5;
 }
 
+/* filter images */
+/* add show class to filtered elements */
+.show {
+  display: block;
+}
 
 
 .more-photos-btn {
@@ -615,12 +630,12 @@ a[href^="tel:"]:hover {
 /* ============================  */
 /* ****************************  */
 
-/* .row {
+.row {
   margin-top: 80px;
 }
 
 div.card-img-overlay {
-    padding: none;
+  padding: none;
 }
 
 .card {
@@ -638,13 +653,18 @@ div.card-img-overlay {
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 4px;
-  border: 1px solid #fff;
   padding: 20px;
-  margin-top: 50px;
   text-align: center;
   width: 70%;
-  margin: 50px auto 0 auto;
+  margin: 0 auto 10px;
 }
+p.card-title {
+  font-size: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+
+}
+/*
 
 p.card-text {
   font-family: 'Poiret One', cursive;
@@ -655,29 +675,30 @@ p.card-text {
   background: rgba(0,0,0,.3);
   width: 70%;
   margin: 20px auto 0 auto;
+} */
+
+.lashCard {
+  background-image: url('./img/policyimg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
 }
 
-.about_us_Card{
+.browCard {
   background-size: cover;
   background-position: center;
   background-image: url('./img/aboutusimg.jpg');
-  height: 300px;
+  height: 200px;
 }
 
-.policy_Card {
+.allCard {
   background-size: cover;
   background-position: center;
-  background-image: url('./img/policyimg.jpg');
-  height: 300px;
+  background-image: url('img/messageusimg.jpg');
+  height: 200px;
 }
 
-.message_us_Card {
-  background-size: cover;
-  background-position: center;
-  background-image: url('./img/messageusimg.jpg');
-  height: 300px;
 
-} */
 
 /* ****************************  */
 /* ============================  */
