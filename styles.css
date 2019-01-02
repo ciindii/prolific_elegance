@@ -47,6 +47,7 @@ h2 {
 .container {
   width: 95%;
   margin: 0 auto;
+  padding: 0 !important;
   color: #eee;
   font-family: 'Raleway', sans-serif;
 }
@@ -504,8 +505,27 @@ table tr {
 /* ==== P O R T F O L I O  ====  */
 /* ============================  */
 #portfolio{
+  margin-top: 100px;
 
 }
+#portfolio img {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-btn-div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+}
+.img-btn-div a{
+  color: #fff;
+  padding: 5px 0;
+  letter-spacing: 2px;
+}
+
+
 
 .more-photos-btn {
   margin: 40px auto 0 auto;
@@ -735,6 +755,7 @@ p.card-text {
 		opacity:0;
 		visibility:hidden;
 	}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -760,6 +781,7 @@ p.card-text {
     display: flex;
     float: right;
     padding: 20px;
+    z-index: 9999;
   }
 
   .side-menu li {
@@ -784,6 +806,17 @@ p.card-text {
   .side-menu a.selected {
     color: gold;
   }
+
+    .portfolio-img-div {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding-left: 0;
+    }
+    #portfolio img {
+      display: inline-block;
+      margin: 0 auto;
+    }
 
   /* ****************************  */
   /* ============================  */
