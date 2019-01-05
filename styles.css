@@ -43,7 +43,6 @@ h2 {
   letter-spacing: 5px;
 }
 
-
 .container {
   width: 95%;
   margin: 0 auto;
@@ -52,6 +51,17 @@ h2 {
   font-family: 'Raleway', sans-serif;
 }
 
+/* SECTION HEADING STYLES */
+#about,
+#lash-extentions,
+#microblading,
+#wax,
+#add-ons,
+#portfolio {
+  min-height: 300px;
+  padding: 50px 0;
+}
+/* END SECTION HEADING STYLES */
 
 /* ==== FIXED SIDE CONTENT ===  */
 /* = END FIXED SIDE CONTENT ==  */
@@ -74,7 +84,7 @@ h2 {
 .brand-name img {
   position: relative;
   width: 120px;
-  margin-left: 10px;
+  margin-left: 20px;
   padding: 0;
   /* animation */
   animation: brand-name;
@@ -87,13 +97,6 @@ h2 {
   100%{opacity: 1;}
 }
 
-/* 'home button' and logo inside overlay nav menu*/
-.logo-menu {
-  margin-top: 40px;
-}
-.logo-menu img {
-  height: 50px;
-}
 /* ===== END LOGO ICON ========  */
 
 /* ========= NAV MENU =========  */
@@ -333,10 +336,12 @@ a.btn-close {
 .mission-text {
   font-size: 30px;
   text-align: center;
-  position: absolute;
+  margin: 0 auto;
+  padding-top: 500px;
+  /* position: absolute;
   top: 60%;
   right: 25%;
-  transform: translate(-50% -50%);
+  transform: translate(-50% -50%); */
 }
 .mission-text p {
   display: inline-block;
@@ -353,9 +358,9 @@ a.btn-close {
   animation-timing-function: ease-in-out;
 }
 @keyframes we-do {
-  0% {content: "lashes";}
-  50% {content: "brows";}
-  100% {content: "sugaring";}
+  0% {content: "lash extentions"; transition: 2s;}
+  50% {content: "microblading"; transition: 2s;}
+  100% {content: "sugar wax"; transition: 2s;}
 }
 /*  END MISSION TEXT */
 
@@ -366,6 +371,7 @@ a.btn-close {
   border-bottom: #fff 1px solid;
   padding-bottom: 20px;
   transition: color 2s;
+  margin: 40px auto 0 auto;
   /* animation */
   animation-name: action-btn;
   animation-duration: 3s;
@@ -386,24 +392,23 @@ a.btn-close {
 }
 
 .view-services-btn {
-  position: absolute;
+  /* position: absolute;
   top: 70%;
   right: 35%;
-  transform: translate(-50% -50%);
+  transform: translate(-50% -50%); */
 }
 /*  END ACTION BUTTON */
 
-/* SECTION HEADING STYLES */
-#about,
-#lash-extentions,
-#microblading,
-#wax,
-#add-ons,
-#portfolio {
-  min-height: 300px;
-  padding: 50px 0;
+/* ABOUT DIV */
+
+#about_div {
+  padding: 30px;
+  margin-top: 40px;
 }
-/* END SECTION HEADING STYLES */
+
+/* END ABOUT DIV */
+
+
 
 .more-sugar-btn {
   margin: 40px auto 0 auto;
@@ -486,15 +491,22 @@ table tr {
 /* =======(policy.html)========  */
 
 #policy {
-  margin-top: 140px;
-  padding: 30px;
+  padding: 20px;
   background-color: #fff;
+  width: 85% !important;
+  margin: 140px auto 0 auto;
 }
 #policy h2 {
   color: gray;
+  font-size: 1.3em;
 }
 #policy p {
   color: #000;
+  margin-bottom: 30px;
+}
+
+a.cell-policy::before {
+  content: " \f095  (206)-000-000";
 }
 
 /* ========== E N D ===========  */
@@ -661,7 +673,6 @@ div.card-img-overlay {
 p.card-title {
   font-size: 20px;
   padding-top: 20px;
-  margin-top: 30px;
 
 }
 /*
