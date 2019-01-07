@@ -66,6 +66,12 @@ h2 {
 /* ==== FIXED SIDE CONTENT ===  */
 /* = END FIXED SIDE CONTENT ==  */
 
+#particles-js {
+  background-color: firebrick;
+  height: 400px;
+}
+
+
 /* ======== FOOTER ===========  */
 /* ====   END FOOTER  ========  */
 
@@ -416,8 +422,12 @@ a.btn-close {
 /* = S E R V I C E S  P A G E =  */
 /* ======(services.html)=======  */
 
+.table-wrapper {
+  padding: 0px 30px !important;
+}
+
 #lash-extentions {
-  padding-top: 120px;
+
 }
 
 .sideNote p {
@@ -794,7 +804,6 @@ p.card-text {
     justify-content: center;
   }
 
-
   ul.wrap-nav {
   	 padding-bottom: 100px;
   }
@@ -804,16 +813,16 @@ p.card-text {
     left: 5px;
   }
 
-    .portfolio-img-div {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      padding-left: 0;
-    }
-    #portfolio img {
-      display: inline-block;
-      margin: 0 auto;
-    }
+  .portfolio-img-div {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+  }
+  #portfolio img {
+    display: inline-block;
+    margin: 0 auto;
+  }
 
   /* ****************************  */
   /* ============================  */

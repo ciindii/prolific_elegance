@@ -80,6 +80,8 @@
   </div>
 
   <div class="container">
+
+    <div id="particles-js"></div>
     <div id="about-us" data-aos="fade-up" data-aos-duration="1600" data-aos-mirror="true" >
     <div id="about_div">
         <h2 data-aos="zoom-in" data-aos-duration="1600">
@@ -140,6 +142,15 @@
     </ul>
   <p class='copyright'>all rights reserved &copy; 2018</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
+  </script>
+  <script>
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'assets/particles.json', function () {
+    console.log('callback - particles.js config loaded');
+  });
+
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
   AOS.init();
