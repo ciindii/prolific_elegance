@@ -66,10 +66,10 @@ h2 {
 /* ==== FIXED SIDE CONTENT ===  */
 /* = END FIXED SIDE CONTENT ==  */
 
-#particles-js {
-  background-color: firebrick;
+/* #particles-js {
+  background-color: #000;
   height: 400px;
-}
+} */
 
 
 /* ======== FOOTER ===========  */
@@ -236,7 +236,7 @@ a.btn-close {
 .menu-icon-div {
   display: flex;
   justify-content: space-between;
-  padding: 35px 0px 130px 0px;
+
 }
 .home-icon,
 .exit-icon {
@@ -405,7 +405,7 @@ a.btn-close {
 
 #about_div {
   padding: 30px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 /* END ABOUT DIV */
@@ -806,6 +806,9 @@ p.card-text {
 
   ul.wrap-nav {
   	 padding-bottom: 100px;
+  }
+  .menu-icon-div {
+    padding: 35px 0px 130px 0px;
   }
 
   .logo {
