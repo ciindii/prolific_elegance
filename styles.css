@@ -66,10 +66,13 @@ h2 {
 /* ==== FIXED SIDE CONTENT ===  */
 /* = END FIXED SIDE CONTENT ==  */
 
-/* #particles-js {
+#particles-js {
   background-color: #000;
   height: 400px;
-} */
+}
+.booking {
+  padding:200px;
+}
 
 
 /* ======== FOOTER ===========  */
@@ -500,7 +503,7 @@ table tr {
   padding: 20px;
   background-color: #fff;
   width: 85% !important;
-  margin: 140px auto 0 auto;
+  margin: 40px auto 0 auto;
 }
 #policy h2 {
   color: gray;

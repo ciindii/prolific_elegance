@@ -69,6 +69,10 @@
     <header class="brand-name">
       <a href="index.html"><img src="img/ex2-2-white.png" alt=""></a>
     </header>
+    <!-- <div id="particles-js"> -->
+
+
+    </div>
     <div class="container">
     <div id="policy" data-aos="fade-up" data-aos-duration="600">
       <h2>
@@ -143,6 +147,16 @@
     </ul>
   <p class='copyright'>all rights reserved &copy; 2018</p>
   </footer>
+  <!-- particles  -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
+    </script>
+    <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'particles.json', function () {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
+  <!--  END particles  -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
   AOS.init();
