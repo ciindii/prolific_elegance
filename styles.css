@@ -574,6 +574,30 @@ a.cell-policy::before {
 .mySlides {
   display:none;
 }
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 30%;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
 /* =========== E N D ==========  */
 
 /* =========== E N D ==========  */

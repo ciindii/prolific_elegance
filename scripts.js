@@ -1,13 +1,6 @@
 AOS.init();
 
-// $(window).bind('scroll', function () {
-//   if ($(window).scrollTop() > 30) {
-//     $('nav').slideUp('slow');
-//   } else {
-//     $('nav').slideDown('fast');
-//   }
-// });
-
+//TOGGLE OVERLAY NAVIGATION
 $(document).ready(function () {
     $('.toggle-button a').click(function () {
         $('.overlay-bg').fadeToggle(200);
@@ -25,6 +18,8 @@ $('.side-menu').on('click', function () {
     $('.side-menu').removeClass('selected');
     $(this).addClass('selected');
   });
+
+// END TOGGLE OVERLAY NAVIGATION
 
 //animate elements
 $(function () {
@@ -51,22 +46,6 @@ function animate(element, animation) {
     }, 1000);
 }
 
-//scrolls to #element when you click a tag
-$(document).ready(function () {
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-    var target = this.hash;
-    var $target = $(target);
-
-    //scroll and show hash
-    $('html, body').animate({
-      scrollTop: $target.offset(),
-    }, 1000, 'swing', function () {
-      window.location.hash = target;
-    });
-  });
-});
-
 function toggle(id) {
   var e = document.getElementById(id);
   if (e.style.display == null || e.style.display == 'none') {
@@ -76,44 +55,16 @@ function toggle(id) {
   }
 }
 
-// function toggle(target) {
-//   document.getElementById(target).style.display = 'block';
-//   // document.getElementById('toggleDiv').style.display = //'none';
-// }
-// function hide(target) {
-//   document.getElementById(target).style.display = 'none';
-//   document.getElementById('toggleDiv').style.display = 'block';
-// }
-
-$(document).ready(function () {
-    $('#toggleDiv a').click(function () {
-        $('#toggleMeetOwner').fadeToggle(200);
-        $(this).toggleClass('show-div').toggleClass('hide-div');
-      });
+//filter images in gallery
+$(function () {
+  var selectedClass = '';
+  $('.filter').click(function () {
+    selectedClass = $(this).attr('data-rel');
+    $('#gallery').fadeTo(100, 0.1);
+    $('#gallery div').not('.' + selectedClass).fadeOut().removeClass('animation');
+    setTimeout(function () {
+      $('.' + selectedClass).fadeIn().addClass('animation');
+      $('#gallery').fadeTo(300, 1);
+    }, 300);
   });
-
-$('#toggleMeetOwner').on('click', function () {
-    $('#toggleMeetOwner').fadeToggle(200);
-    $('#toggleDiv').toggleClass('show-div').toggleClass('hide-div');
-    open = false;
-  });
-
-// var myIndex = 0;
-// carousel();
-//
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName('mySlides');
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = 'none';
-//   }
-//
-//   myIndex++;
-//   if (myIndex > x.length) {
-//     myIndex = 1;
-//   }
-//
-//   x[myIndex - 1].style.display = 'block';
-//
-//   setTimeout(carousel, 2000); // Change image every 2 seconds
-// }
+});
