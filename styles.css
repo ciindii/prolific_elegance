@@ -564,12 +564,8 @@ a.cell-policy::before {
   margin: 0 auto;
 }
 
-.img-btn-div button{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 10px 0;
-  width: 150px;
+.img-btn-div button {
+  padding: 50px 20px;
   margin: 0 auto;
   color: #fff;
   background-color: #000;
