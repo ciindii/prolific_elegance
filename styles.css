@@ -24,6 +24,7 @@ a {
   text-decoration: none;
   color: #fff;
   transition: opacity 0.4s ease-out;
+  cursor: pointer;
 }
 a:hover {
   color: gold;
@@ -134,7 +135,6 @@ nav ul li a {
 /* ======= toggle button ======  */
 .toggle-button {
 	display: inline;
-	position: fixed;
 	right: -5px;
 	top: -10px;
 	z-index: 999;
@@ -153,8 +153,9 @@ nav ul li a {
   padding: 15px;
   right: 25px;
   opacity: .6;
-	content: "\f142";
-	font-family: "FontAwesome";
+  content: "MENU";
+  font-family: 'Poiret One', sans-serif;
+  cursor: pointer;
   top: 30px;
   font-size: 20px;
   transition: 1.5s;
@@ -343,10 +344,6 @@ a.btn-close {
   text-align: center;
   margin: 0 auto;
   padding-top: 500px;
-  /* position: absolute;
-  top: 60%;
-  right: 25%;
-  transform: translate(-50% -50%); */
 }
 .mission-text p {
   display: inline-block;
@@ -590,18 +587,41 @@ a.cell-policy::before {
 
 .more-photos-btn {
   margin: 40px auto 0 auto;
+  display: block;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 0px;
+  opacity: .5;
+}
+
+#myBtn:hover {
+  opacity: 1;
+  transition: 1.5s;
+  -webkit-transition: 1s; /* Safari */
+
 }
 
 .gallery {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding-left: 0;
-}
-.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
 }
+
+
 
 .gallery,
 .animation {
